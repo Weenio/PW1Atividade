@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/text.style.css">
+  <link rel="stylesheet" href="/css/page.style.unique.css">
+  <script src="/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/dinamics.js"></script>
+  <title>Artigo sobre "Application Programming Interface (API)"</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg" id="navbah">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="http://etecpw1.somee.com/">Atividade de PW1</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Definições
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/html/defs/html.html">
+                  Hipertext Markup Language (HTML)
+                </a></li>
+              <li><a class="dropdown-item" href="/html/defs/css.html">
+                  Cascading Style Sheets (CSS)
+                </a></li>
+              <li><a class="dropdown-item" href="/html/defs/js.html">
+                  Java Script (JS)
+                </a></li>
+              <li><a class="dropdown-item" href="/html/defs/api.html">
+                  Application Programming Interface (API)
+                </a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/html/defs/csharp.html">
+                  Linguagem de programação: C#
+                </a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/html/defs/mer.html">
+                  Monitoring, Evaluation and Research (MER)
+                </a></li>
+              <li><a class="dropdown-item" href="/html/defs/der.html">
+                  Distributed Energy Resource (DER)
+                </a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Dinâmicas
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/html/dins/dinamic1.html">Validação de Dados</a></li>
+              <li><a class="dropdown-item" href="/html/dins/dinamic2.html">Calculador de IMC</a></li>
+              <li><a class="dropdown-item" href="/html/dins/dinamic3.html">Cálculo de Juros Compostos</a>
+              </li>
+              <li><a class="dropdown-item" href="/html/dins/dinamic4.html">Composição de preços</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/html/dins/dinamic5.html">CSS dark/light</a></li>
+            </ul>
+          </li>
+        </ul>
+        <img src="/img/moon.png" height="30px" width="30px" onclick="dinamic5()" id="change">
+      </div>
+    </div>
+  </nav>
+  </nav>
+  <div class="container-fluid">
+    <h1>API (Application Programming Interface)</h1>
+    <h2>O Básico</h2>
+    <p><img src="/img/API-logo.png" width="300px" height="300px"
+        style="float:right; margin-left: 2%; margin-right: 2%;">
+      A API é um conjunto de regras e padrões que define como diferentes componentes de software podem interagir uns com
+      os outros. As APIs fornecem um conjunto de métodos, funções e protocolos para acessar recursos e funcionalidades
+      específicas de um sistema, como serviços web, bancos de dados, sistemas operacionais e muito mais.
+    </p>
+    <p>
+      As APIs podem ser usadas para gerar interação entre recursos de terceiros em um aplicativo, como autenticação de
+      usuário, processamento de pagamentos e interação com banco de dados.
+    </p>
+    <p>
+      É comum se confundir, pensando que a API é a junção e a boa função entre HTML, CSS e JavaScript, mas isso está
+      errado. Embora o HTML, CSS e JavaScript sejam fundamentais, a API é uma camada adicional de interação e
+      comunicação com outros sistemas e recursos, além de oferecer funcionalidades específicas fornecidas por esses
+      sistemas. Todavia, isso não implica a interação entre eles. Quando se trata de interagir com APIs, o <a
+        href="js.html">JavaScript</a> é a linguagem principal usada para fazer solicitações HTTP para um servidor,
+      receber e enviar dados e processar as respostas. Essas solicitações e respostas normalmente são formatadas em JSON
+      (JavaScript Object Notation), que é uma forma comum de estruturar dados para transmissão entre um cliente e um
+      servidor. O <a href="html.html">HTML</a> e o <a href="css.html">CSS</a> também ajudam, sendo ultilizados para
+      exibir e estilizar os dados obtidos das APIs. O
+      HTML é usado para estruturar e organizar os elementos da página, enquanto o CSS é usado para aplicar estilos e
+      formatar esses elementos.
+    </p>
+    <figure style="float:left; margin-right: 1%;">
+      <img src="/img/Valdemar.webp" width="450px" height="300px">
+      <figcaption>As APIs estão presentes na maioria do dispositivos, inclusive no<br>
+      notebook do Valdemar.</figcaption>
+    </figure>
+    <h2>Principais usos</h2>
+    <p>
+      Como dito antes, API é um conjunto de protocolos que permite a interação e comunicação entre diferentes softwares.
+      Ela define a forma como os componentes de software devem se comunicar e interagir uns com os outros, permitindo o
+      acesso a funcionalidades e recursos específicos de um certo sistema.
+    </p>
+    <p>
+      Elas podem ser encontradas em uma variedade de contextos, incluindo sistemas operacionais, aplicativos, frameworks
+      e serviços web. Elas fornecem uma interface consistente e padronizada para que os desenvolvedores ultilizem os
+      recursos e funcionalidades oferecidos por um determinado software, sem precisar conhecer os detalhes internos de
+      implementação.
+    </p>
+    <p>
+      As APIs podem oferecer diferentes tipos de funcionalidades, como acesso a banco de dados, integração com serviços
+      externos, manipulação de arquivos, interação com hardware, processamento de pagamentos, autenticação de usuários,
+      entre outros. Por essa página ser simples, não temos nenhum exemplo prático do código, mas normalmente, esses
+      elementos não são programados dentro da página HTML, e a interação é feita por um script em JavaScript. Essa
+      interação gera, como antes dito, ou um arquivo em JSON ou XML.
+    </p>
+    <p>
+      No geral, a API é como se fosse o garçom que faz a ligação do front-end, com o back-end.
+    </p>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0">Atividade de PW1</p>
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="/index.html" class="nav-link px-2">Home</a></li>
+      </ul>
+    </footer>
+  </div>
+</body>
+
+</html>

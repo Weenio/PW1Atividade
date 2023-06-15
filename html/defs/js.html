@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/page.style.unique.css">
+  <link rel="stylesheet" href="/css/text.style.css">
+  <script src="/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/dinamics.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg" id="navbah">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="http://etecpw1.somee.com/">Atividade de PW1</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Definições
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/html/defs/html.html">
+                  Hipertext Markup Language (HTML)
+                </a></li>
+              <li><a class="dropdown-item" href="/html/defs/css.html">
+                  Cascading Style Sheets (CSS)
+                </a></li>
+              <li><a class="dropdown-item" href="/html/defs/js.html">
+                  Java Script (JS)
+                </a></li>
+              <li><a class="dropdown-item" href="/html/defs/api.html">
+                  Application Programming Interface (API)
+                </a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/html/defs/csharp.html">
+                  Linguagem de programação: C#
+                </a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/html/defs/mer.html">
+                  Monitoring, Evaluation and Research (MER)
+                </a></li>
+              <li><a class="dropdown-item" href="/html/defs/der.html">
+                  Distributed Energy Resource (DER)
+                </a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Dinâmicas
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/html/dins/dinamic1.html">Validação de Dados</a></li>
+              <li><a class="dropdown-item" href="/html/dins/dinamic2.html">Calculador de IMC</a></li>
+              <li><a class="dropdown-item" href="/html/dins/dinamic3.html">Cálculo de Juros Compostos</a>
+              </li>
+              <li><a class="dropdown-item" href="/html/dins/dinamic4.html">Composição de preços</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/html/dins/dinamic5.html">CSS dark/light</a></li>
+            </ul>
+          </li>
+        </ul>
+        <img src="/img/moon.png" height="30px" width="30px" onclick="dinamic5()" id="change">
+      </div>
+    </div>
+  </nav>
+  </nav>
+  <div class="container-fluid">
+    <h1>Java Script</h1>
+    <h2>O Básico</h2>
+    <p><img src="/img/JS-logo.png" width="300px" height="300px" style="float:right; margin-left: 2%; margin-right: 2%;">
+      Java Script é uma linguagem de programação interpretada estruturada, de script em alto nível. Junto com HTML5 e
+      CSS3, o JavaScript é uma das três principais tecnologias da Rede Mundial de Computadores. Apesar do nome,
+      JavaScript nada tem a ver com a linguagem de programação "Java".
+    </p>
+    <p>
+      Por oferecer a possibilidade de interações da página com o usuário e criação de conteúdos dinâmicos, o JS
+      (abreviação de "Java Script"), é amplamente usado na grande maioria das páginas de hoje em dia, sendo quase
+      impossível encontrar uma página que não use JavaScript para uma única interação se quer.
+    </p>
+    <p>
+      O JavaScript tem uma série de vantagens que fazem com ele seja a melhor escolha entre seus competidores. Dentre
+      elas estão: Não precisar compilar o código, é uma linguagem fácil de aprender e é mais rápido e mais leve que
+      outras linguagens que podem ser ultilizadas para programação web.
+    </p>
+    <p>
+      Todas as linguagens de programação tem as suas fraquezas, oque o deixa também vulnerável à brechas na segurança,
+      podendo executar códigos maliciosos no dispositivo do usuário. Para o JavaScript é principalmente a sua
+      popularidade, oque atrai os famosos hackers. Dentre as outras fraquezas estão: ele nem sempre tem suporte para
+      todos os navegadores ou dispositivos, pode ser executado de diferentes formas em diferentes dispositivos e os seus
+      códigos costumam ser bem grandes.
+    </p>
+    <figure style="float:left; margin-right: 1%;">
+      <img src="/img/JS-cod.png" width="525px" height="275px">
+      <figcaption>Aparencia de um código JS</figcaption>
+    </figure>
+    <h2>O principal do Java Script: functions</h2>
+    <p>
+      Ao declarar um botão em um documento HTML, é recomendado que se declare a função que ele vai acabar executando na
+      sua linha de código. Java Script é uma linguagem também orientada por um objeto, isso é, uma função. O botão de
+      trocar o tema escuro para claro nesse site, usa essa mesma lógica. Com essas functions é que a mágica do
+      JavaScript acontece. Com elas, é possível manipular elementos do documento, interagir com APIs, validar
+      formulários, criar animações complexas e enviar e receber dados do servidor.
+    </p>
+    <p>
+      O JavaScript desempenha um papel fundamental no desenvolvimento web, permitindo criar páginas e aplicativos
+      interativos, dinâmicos e responsivos, tanto no navegador quanto no servidor.
+    </p>
+    <p>
+      No geral, as inteações do tipo "functions" recebem sempre esse mesmo processo e aparência: Primeiro você declara
+      um nome para a função, depois você coloca o código a ser executado entre os colchetes, e encerra fechando o
+      código.
+    </p>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0">Atividade de PW1</p>
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="/index.html" class="nav-link px-2">Home</a></li>
+      </ul>
+    </footer>
+  </div>
+</body>
+
+</html>

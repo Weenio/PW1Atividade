@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/page.style.unique.css">
+  <link rel="stylesheet" href="/css/text.style.css">
+  <script src="/js/dinamics.js"></script>
+  <script src="/js/bootstrap.bundle.min.js"></script>
+  <title>Artigo sobre "Cascading Style Sheets (CSS)"</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg" id="navbah">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="http://etecpw1.somee.com/">Atividade de PW1</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Definições
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/html/defs/html.html">
+                  Hipertext Markup Language (HTML)
+                </a></li>
+              <li><a class="dropdown-item" href="/html/defs/css.html">
+                  Cascading Style Sheets (CSS)
+                </a></li>
+              <li><a class="dropdown-item" href="/html/defs/js.html">
+                  Java Script (JS)
+                </a></li>
+              <li><a class="dropdown-item" href="/html/defs/api.html">
+                  Application Programming Interface (API)
+                </a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/html/defs/csharp.html">
+                  Linguagem de programação: C#
+                </a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/html/defs/mer.html">
+                  Monitoring, Evaluation and Research (MER)
+                </a></li>
+              <li><a class="dropdown-item" href="/html/defs/der.html">
+                  Distributed Energy Resource (DER)
+                </a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Dinâmicas
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/html/dins/dinamic1.html">Validação de Dados</a></li>
+              <li><a class="dropdown-item" href="/html/dins/dinamic2.html">Calculador de IMC</a></li>
+              <li><a class="dropdown-item" href="/html/dins/dinamic3.html">Cálculo de Juros Compostos</a>
+              </li>
+              <li><a class="dropdown-item" href="/html/dins/dinamic4.html">Composição de preços</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/html/dins/dinamic5.html">CSS dark/light</a></li>
+            </ul>
+          </li>
+        </ul>
+        <img src="/img/moon.png" height="30px" width="30px" onclick="dinamic5()" id="change">
+      </div>
+    </div>
+  </nav>
+  </nav>
+  <div class="container-fluid">
+    <h1>CSS: Cascading Style Sheets</h1>
+    <h2>O Básico</h2>
+    <p><img src="/img/CSS3-logo.png" width="190px" height="250px"
+        style="float:right; margin-left: 2%; margin-right: 2%;">
+      A Folha de Estilos em Cascatas é uma linguagem de estilização que serve para dar visuais para uma página <a
+        href="/html/defs/html.html">HTML</a>. A função principal do CSS é descrever como os elementos vão aparecer na
+      tela e/ou em outras mídias.
+    </p>
+    <p>
+      CSS é uma das linguagens principai da open web, e é padronizada de a cordo com as normas da <a
+        href="https://www.w3.org/Style/CSS/#specs">W3C</a>. Assim como HTML, temos versões datadas do CSS também, e do
+      mesmo modo, algumas características foram heradas/aprimoradas das versões anteriores. A versão CSS1 está
+      atualmente datada, e o CSS2.1 é uma recomendação ao atual CSS3, que dividido em pequenos módulos está mostrando
+      avanços significativos em suas padronizações.
+    </p>
+    <p>
+      A diferença entre um site que ultiliza CSS e um que não usa é gigantesca. Sites que não usam esse artifício
+      normalmente tem o texto preto e/ou azul e o fundo branco. Nos primórdios da internet, não era difil que as páginas
+      fossem apresentadas dessa forma, seja por mal carregamento da folha de estilo (pela fraca internet da época) ou
+      pelo fato do criador da página ter optado por não colocar o CSS.
+    </p>
+    <figure style="float:left; margin-right: 1%;">
+      <img src="/img/CSS-cod.png" width="100%" height="100%">
+      <figcaption>Aparencia de um código CSS3 desta página, no arquivo .css</figcaption>
+    </figure>
+    <h2>Aparência de um codigo em CSS3</h2>
+    <p>
+      Como antes citado, o css tem o objetivo de estilizar a página. Um código em css tem várias definições que podem
+      ter efeitos estéticos na página, e eles vão desde o tamanho da fonte, até animações básicas. A propriedade mais
+      comum ao usar um css é a margem, com ela, podemos delimitar uma margem para a página mostrar o texto, sem ela ter
+      que ficar colada nas bordas da tela. Pode-se também modificar tags já existentes (como é o caso desse exemplo),
+      para que eles tomem propriedades específicas. Se as instruções forem colocadas no css, todas as tags modificadas
+      na página tomaram os parâmetros. É possivel determinar um estilo específico para uma tag específica na página, sem
+      que as demais tomem esse estilo, e sem a necessidade de fazer vários estilos simples no css com a funcionalidade
+      chamada "style". Nesta página, usamos o "style" nas imagens para definir se a orientação delas será na esquerda da
+      página, ou na direita. Sem essa funcionalidade, teriamos que colocar dois estilos específicos no css para cada
+      orientação de imagem.
+    </p>
+    <figure style="float:left; margin-right: 1%;">
+      <img src="/img/CSS-style.png" width="100%" height="100%">
+      <figcaption>Função style empregada na tag "figure" NESTA exata imagem.</figcaption>
+    </figure>
+    <h2>Estilos direto na tag do html: funcionalidade "Style:"</h2>
+    <p>
+      Como dito antes, a função "style" é uma propriedade que pode ser aplicada a várias tags HTML para definir estilos
+      e aparência visuais de tags específicas, sem a necessidade de usar uma folha de estilos CSS externa. A propriedade
+      "style" permite que você defina estilos em linha, tornando-o útil para aplicar estilos específicos a elementos
+      específicos sem afetar outros elementos da página, como é o caso da imagem de exemplo.
+    </p>
+    <p>
+      Ao usar a função "style", você pode definir literalmente qualquer propriedade nativa do CSS3. Quando são essas
+      propriedades são mais que uma, elas são escritas com pares de colchetes, separadas por ponto e vírgula (;).
+    </p>
+    <p>
+      Essa propriedade é uma ferramenta muito forte, porém, se usada de forma exessiva, pode causar uma certa
+      dificuldade na hora de arrumar possíveis erros, ou na hora de atualizar o código por algum motivo. O aconcelhado é
+      colocar essas especificações dentro de alguma folha de estilos, ao invés de descreve-las na hora, quando for
+      colocar uma nova tag no documento. As folhas de estilo oferecem também uma extrema flexbilidade na ultilização, já
+      que os estilos são globais e podem ser reutilizados por outras tags apenas declarando um outra funcionalidade
+      chamada "class". Mas como neste caso, só precisariamos fazer alguns ajustes básicos, é muito mais conpensatório
+      usar o "style", ao invés de declarar um código de estilização apenas para mudar a imagem de lugar.
+    </p>
+    <h2>Bootstrap</h2>
+    <p><img src="/img/bootstrap-stack-logo.png" width="250px" height="200px"
+        style="float:right; margin-left: 2%; margin-right: 2%;">
+      O Bootstrap é um dos frameworks front-end mais populares para desenvolvimento web. Ele foi criado por Mark Otto e
+      Jacó Thornton e é uma bibliotecas de código aberto que contém estilos CSS pré-definidos e componentes interativos
+      em scripts JavaScript para ajudar a criar interfaces responsivas e modernas de forma rápida e fácil.
+    </p>
+    <p>
+      O objetivo principal do Bootstrap é oferecer um ponto de partida sólido para o desenvolvimento de sites e
+      aplicativos web, além de ajudar também iniciantes do front-end. Ele fornece uma série de componentes prontos para
+      uso que ajudam a estruturar o layout e estilizar elementos, melhoramdo a experiência do usuário e facilitando a do
+      desenvolvedor.
+    </p>
+    <p>
+      No geral, Bootstrap é abraçado pela comunidade de desenvolvedores front-end, por conta da sua praticidade. Além de
+      tudo isso, é possível usar os estilos predefinidos do Bootstrap para entender ainda mais sobre CSS, e fazer os
+      seus próprios estilos com esse aprendizado.
+    </p>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0">Atividade de PW1</p>
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="/index.html" class="nav-link px-2">Home</a></li>
+      </ul>
+    </footer>
+  </div>
+</body>
+
+</html>

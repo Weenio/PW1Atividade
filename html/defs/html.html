@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/page.style.unique.css">
+  <link rel="stylesheet" href="/css/text.style.css">
+  <script src="/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/dinamics.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg" id="navbah">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="http://etecpw1.somee.com/">Atividade de PW1</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Definições
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/html/defs/html.html">
+                  Hipertext Markup Language (HTML)
+                </a></li>
+              <li><a class="dropdown-item" href="/html/defs/css.html">
+                  Cascading Style Sheets (CSS)
+                </a></li>
+              <li><a class="dropdown-item" href="/html/defs/js.html">
+                  Java Script (JS)
+                </a></li>
+              <li><a class="dropdown-item" href="/html/defs/api.html">
+                  Application Programming Interface (API)
+                </a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/html/defs/csharp.html">
+                  Linguagem de programação: C#
+                </a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/html/defs/mer.html">
+                  Monitoring, Evaluation and Research (MER)
+                </a></li>
+              <li><a class="dropdown-item" href="/html/defs/der.html">
+                  Distributed Energy Resource (DER)
+                </a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Dinâmicas
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/html/dins/dinamic1.html">Validação de Dados</a></li>
+              <li><a class="dropdown-item" href="/html/dins/dinamic2.html">Calculador de IMC</a></li>
+              <li><a class="dropdown-item" href="/html/dins/dinamic3.html">Cálculo de Juros Compostos</a>
+              </li>
+              <li><a class="dropdown-item" href="/html/dins/dinamic4.html">Composição de preços</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/html/dins/dinamic5.html">CSS dark/light</a></li>
+            </ul>
+          </li>
+        </ul>
+        <img src="/img/moon.png" height="30px" width="30px" onclick="dinamic5()" id="change">
+      </div>
+    </div>
+  </nav>
+  </nav>
+  <div class="container-fluid">
+    <h1>HTML: Linguagem de Marcação de Hipertexto</h1>
+    <h2>O Conceito básico</h2>
+    <p><img src="/img/HTML5-logo.png" width="250px" height="250px" style="float:right">A Linguagem de Marcação de
+      Hipertexto é a principal linguagem ultilizada na front-end de sites, para mostrar os mais diversos conteúdos ao
+      visitante do mesmo. Essa linguagem de marcação conta com tags para mostrar texto de título, parágrafos, imagens,
+      inserção de scripts e de estilos em <a href="/html/defs/css.html">CSS3</a>. Como HTML5 é uma linguagem muito
+      básica, ela é mais usada com outras linguagens para descrever o estilo da página, como o anteriormente citado
+      CSS3, e para inserir funcionalidades, no <a href="/html/defs/js.html">JS</a>.
+    </p>
+    <p>O "Hipertexto" ao qual a nomenclatura se refere, se dá aos links que podem ser feitos entre os sites, sejam
+      eles complementares entre o próprio site (como o caso dessa atividade), ou entre sites diferentes (como por
+      exemplo um site que leva à um site de um anunciante). A capacidade dos links é um fator muito importante para
+      internet, uma vez que carregar páginas de terceiros possa ajudar à espalhar o conhecimento dos mesmos. Ao
+      compartilhar conteúdo na internet e vincular esses conteúdos em sites de terceiros, você se torna
+      automaticamente um membro ativo da WWW (World Wide Web, ou Rede Mundial de Computadores).
+    </p>
+
+    <figure style="float:left; margin-right: 1%;">
+      <img src="/img/HTML-cod.png" width="433px" height="215px">
+      <figcaption>Aparência de um código em HTML com CSS & JavaScript</figcaption>
+    </figure>
+    <h2>Tags: o principal do HTML</h2>
+    <p>
+      A marcação do HTML é tudo oque se vê na imagem a esquerda. São essas tags que fazem tudo isso ser mostrado na
+      tela para o usuário. Claro que, no caso do exemplo, está tudo estilizado, por isso essas tags são maiores do
+      que realmente seriam se fosse de fato, um HTML puro.
+    </p>
+    <p>Essas tags, também chamadas de elementos, são separadas do resto do código pelos caracteres "<" e ">" . Como você
+        deve ter notado na imagem, a tag <img src="/img/div-example1.png">, mas fecha <img src="/img/div-example2.png">
+        (com "/").
+        A marcação de de "fechar" o elemento é muito importante, pois ela delimita o espaço que a tag vai impactar na
+        página. Sem ela, varias classes em css impactariam a página ao mesmo tempo, fazendo com que a página
+        puldesse se tornar inaproveitável.
+    </p>
+    <p>Existe uma quantidade gigantesca tags para serem usadas no HTML, ainda mais pelo fato de terem outras 4 versões
+      da linguagem de formatação (oque implica que muitas das tags foram herdadas ou adaptadas de versões antigas,
+      hoje datadas). Mas, dentre todos esses elementos, pode-se destacar a tag "body", que não é a mais importante
+      só porque existe a "!DOCTYPE html". A tag delimita o conteúdo principal do documento que será exibido no navegador
+      da web. Todas as informações visíveis ao usuário, como texto, imagens, links e elementos interativos, devem ser
+      inseridas dentro dessa tag. Dentro do código, a tag body é a penultima a ser fechada, sendo a ultima a tag "html".
+      A grosso modo, a tag body é responsável por colocar na tela todo o conteúdo a ser exibido, e tudo oque é inserido
+      no documento que não esteja dentro das delimitações dessa tag é automaticamente excluido da exibição, oque nos
+      leva há uma parte que está presente na maioria dos documentos HTML: A tag "head".
+    </p>
+    <figure style="float:left; margin-right: 1%;">
+      <img src="/img/HTML-cod_headtag.png" width="444px" height="305px">
+      <figcaption>Aparência da tag head em um HTML</figcaption>
+    </figure>
+    <h2>O cabeçalho</h2>
+    <p>A tag head é uma das principais tags utilizadas na estruturação de uma página HTML. Ela fornece informações sobre
+      o documento, mas não exibe conteúdo visível ao usuário. Essa tag contém metadados, referências a arquivos
+      externos, scripts, estilos e outras informações importantes relacionadas ao documento HTML.
+    </p>
+    <p>Dentro da tag head, pode-se incluir várias subtags, como a "title", "meta", "link", "script" e "style". Cada tag
+      dessas tem uma função em específico dentro da head, e são elas:
+    </p>
+    <p>
+      <strong>• "title"</strong>: Define o título da página, que geralmente é exibido na barra de título do navegador ou
+      na guia. É um
+      elemento obrigatório dentro da tag "head".<br>
+      <strong>• "meta"</strong>: Fornece os metadados sobre o documento HTML, como a descrição da página, palavras-chave
+      relevantes, autor, codificação de caracteres e etc. Os metadados ajudam os motores de busca a entenderem melhor o
+      conteúdo da página.<br>
+      <strong>• "link"</strong>: Usado para vincular um arquivo externo à página HTML, como um arquivo CSS, um
+      ícone de página, uma fonte personalizada ou um script de comando em JavaScript.<br>
+      <strong>• "script"</strong>: Permite a inclusão de scripts JavaScript na página. Esses scripts podem ser usados
+      para adicionar funcionalidades interativas à página, manipular elementos da página, enviar ou receber dados do
+      servidor, entre outras coisas.<br>
+      <strong>• "style"</strong>: Utilizado para definir estilos CSS internos que serão aplicados à página HTML. Os
+      estilos definidos dentro da tag "style" afetam apenas o documento atual.
+    </p>
+    <p>
+      A tag "head" é sempre posicionada antes da tag "body" dentro do HTML e serve como uma caixa para todas as
+      informações e recursos para que a página funcine e para que a página seja formatada adequadamente. Embora seu
+      conteúdo não seja visível diretamente ao usuário, ele desempenha um papel crucial na estruturação e na
+      apresentação da página.
+    </p>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0">Atividade de PW1</p>
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="/index.html" class="nav-link px-2">Home</a></li>
+      </ul>
+    </footer>
+  </div>
+</body>
+
+</html>

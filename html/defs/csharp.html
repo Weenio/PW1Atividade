@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/text.style.css">
+  <link rel="stylesheet" href="/css/page.style.unique.css">
+  <script src="/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/dinamics.js"></script>
+  <title>Artigo sobre "C#"</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg" id="navbah">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="http://etecpw1.somee.com/">Atividade de PW1</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Definições
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/html/defs/html.html">
+                  Hipertext Markup Language (HTML)
+                </a></li>
+              <li><a class="dropdown-item" href="/html/defs/css.html">
+                  Cascading Style Sheets (CSS)
+                </a></li>
+              <li><a class="dropdown-item" href="/html/defs/js.html">
+                  Java Script (JS)
+                </a></li>
+              <li><a class="dropdown-item" href="/html/defs/api.html">
+                  Application Programming Interface (API)
+                </a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/html/defs/csharp.html">
+                  Linguagem de programação: C#
+                </a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/html/defs/mer.html">
+                  Monitoring, Evaluation and Research (MER)
+                </a></li>
+              <li><a class="dropdown-item" href="/html/defs/der.html">
+                  Distributed Energy Resource (DER)
+                </a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Dinâmicas
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/html/dins/dinamic1.html">Validação de Dados</a></li>
+              <li><a class="dropdown-item" href="/html/dins/dinamic2.html">Calculador de IMC</a></li>
+              <li><a class="dropdown-item" href="/html/dins/dinamic3.html">Cálculo de Juros Compostos</a>
+              </li>
+              <li><a class="dropdown-item" href="/html/dins/dinamic4.html">Composição de preços</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/html/dins/dinamic5.html">CSS dark/light</a></li>
+            </ul>
+          </li>
+        </ul>
+        <img src="/img/moon.png" height="30px" width="30px" onclick="dinamic5()" id="change">
+      </div>
+    </div>
+  </nav>
+  </nav>
+  <div class="container-fluid">
+    <h1>C#: Linguagem de programação</h1>
+    <h2>O Básico</h2>
+    <p><img src="/img/Cs-logo.png" width="244px" height="276px" style="float:right; margin-left: 2%; margin-right: 2%;">
+      Sendo uma das linguagens de programação derivadas da antiga linguagem "C", C# (de pronúncia "C sharp") é uma
+      linguagem orientada objeto que é amplamente ultilizada para a construção de programas. Sua tipagem é forte, e foi
+      desenvolvida pela Microsoft como parte da sua plataforma, .NET. Sendo ela a irmã mais nova dentre as outras
+      derivadas da linguagem C, é de se imaginar que algumas características foram herdadas de outras linguagens mais
+      velhas que ela, como a sua sintaxe orientada a objetos, que foi baseada no C++, mas inclui muitas outras
+      influências de outras linguagens de programação, como Pascal e, principalmente, Java (Não confundir com <a
+        href="js.html">JavaScript</a>).
+    </p>
+    <p>
+      Ser uma linguagem orientada a objeto significa que uma linha de código será executada quando o usuário interagir
+      com algum elemento do aplicativo. Um exemplo claro, é o botão de tema escuro desse site. O botão em sí é um
+      objeto, e quando é realizada a interação com ele, uma linha de código em JavaScript é executada, escurecendo o
+      tema da página atual. Apesar do botão ter sido codificado em JavaScript, esse conceito não cai muito longe quando
+      falamos do C#, já que ambas são linguagens da mesma familia.
+    </p>
+    <p>
+      C# é uma linguagem forte, e com uma segurança elevada, tornando ela uma ótima escolha para aplicativos seguros.
+    </p>
+    <figure style="float:left; margin-right: 1%;">
+      <img src="/img/Cs-cod.png" width="429px" height="251px">
+      <figcaption>Aparência de um código em C#.</figcaption>
+    </figure>
+    <h2>O Código</h2>
+    <p>
+      No código em C#, pode-se notar que antes de qualquer coisa, é nescessário declarar um objeto que vai receber os
+      comandos, e vai executá-los. No exemplo, você pode notar esse objeto logo no inicio da imagem, onde se tem "void
+      Button1Click(object sender, EventArgs e)". Note também que, logo depois dessa declaração, na linha de baixo é
+      aberto um "{". Esse em específico só se fecha quando se termina de inserir o código "dentro do objeto", que no
+      caso é o Button1. É bom ressaltar também que "Button1Click" não é o nome do objeto, e que o "Click" especifica o
+      cenário que o objeto "Button1" deve ser exposto para ser executado o código. No caso em questão, o código será
+      executado apenas se o "Button1" for clicado, por isso "Button1Click"
+    </p>
+    <p>
+      Existem muitos comandos que podem ser colocados dentro de um objeto (se tiver mais interesse, pode visitar o <a
+        href="https://learn.microsoft.com/pt-br/dotnet/csharp/tour-of-csharp/">Tour e Visão geral sobre C#</a>, um
+      documento feito pela microsoft que explica bem cada ponto dessa linguagem). Mas entre todos esses, os fundamentais
+      e muito importantes são aqueles que manipulam os valores que no código, levam o nome de "String". Valores em
+      String são básicamente os caracteres de letras e números (no caso de um número, se declarado em String é
+      impossível realizar qualquer operação matemática, já que o computador os interpreta como texto). Como os códigos
+      em sí são escritos com texto, se pode usar os valores em String para determinar ocasiões especiais no código.
+    </p>
+    <p>
+      Para fazer uma aplicação em C#, é nescessáriose ter uma IDE (Integrated Development Environment, em português,
+      Ambiente de desenvolvimento integrado), pois o código precisa ser compilado. Compilar algo é quando a IDE pega
+      todo o código escrito e junta em um único executável. A seguir, apresentaremos duas boas IDEs.
+    </p>
+    <h2>Sharp Developer</h2>
+    <p><img src="/img/SharpDevelop-logo.png" width="276px" height="276px"
+        style="float:right; margin-left: 2%; margin-right: 2%;">
+      SharpDevelop é gratuito e tem código aberto para a linguagem de programação C#. Ele fornece um conjunto de
+      ferramentas e recursos para desenvolver aplicativos .NET usando, C#.
+    </p>
+    <p>
+      Ele permite que os desenvolvedores criem aplicativos Windows, bibliotecas de classes, aplicativos web ASP.NET e
+      serviços WCF usando a linguagem C#. Além disso, o SharpDevelop oferece suporte a múltiplas versões do .NET
+      Framework.
+    </p>
+    <p>
+      Embora o seu suporte tenha sido descontinuado em 2015, a versão mais recente disponível é a 5.1, que suporta o
+      .NET Framework 4.6. O código-fonte do SharpDevelop está disponível no repositório do GitHub, permitindo que os
+      desenvolvedores interessados contribuam e estendam seu "funcionamento".
+    </p>
+    <p>
+      Já que o seu suporte foi descontinuado, é importante mencionar que muitos desenvolvedores optaram por usar o
+      Visual Studio, uma vez que essa IDE tem menos bugs que podem fazer voê perder o projeto instantaneamente. O Sharp
+      Develop é uma IDE muito boa, mas vale lembrar que existem opções melhores, porém mais pesadas que ele. Portanto,
+      se você está começando um novo projeto ou trabalhando em um ambiente de desenvolvimento C#, é recomendável
+      considerar outras opções de IDEs disponíveis, como o Visual Studio (que será citado abaixo) ou Visual Studio Code.
+    </p>
+    <h2>Visual Studio</h2>
+    <p><img src="/img/VStudio-logo.png" width="276px" height="276px"
+        style="float:right; margin-left: 2%; margin-right: 2%;">
+      O Visual Studio é uma IDE poderosa e abrangente desenvolvido pela Microsoft. Ela oferece uma ampla gama de
+      ferramentas e recursos para desenvolvedores criarem e implantarem aplicativos de software.
+    </p>
+    <p>
+      O Visual Studio suporta várias linguagens de programação, incluindo C#, Visual Basic.NET, C++, F#, Python,
+      JavaScript, TypeScript, entre outras. Isso permite que os desenvolvedores escolham a linguagem mais adequada para
+      seus projetos.
+    </p>
+    <p>
+      Ele também permite o desenvolvimento de aplicativos móveis para Android, iOS e Windows usando ferramentas como
+      Xamarin, React Native e Apache Cordova. Isso permite que os desenvolvedores criem aplicativos móveis
+      multiplataforma ou nativos.
+    </p>
+    <p>
+      Algo muito bom que ele tem também é um poderoso depurador que permite aos desenvolvedores identificar e corrigir
+      problemas em seus aplicativos durante a fase de desenvolvimento. Ele oferece recursos como pontos de interrupção e
+      inspeção de variáveis que são muito úteis, já que podem identificar erros nas sintaxes dos comandos.
+    </p>
+    <p>
+      O Visual Studio oferece integração com a plataforma de nuvem da Microsoft, o Azure. Isso facilita a implantação de
+      aplicativos na nuvem, o gerenciamento de recursos em nuvem e a integração com serviços e APIs do Azure. Isso sem
+      contar a sua integração ao sistema de controle de versão Git, que oferece recursos avançados de gerenciamento de
+      código-fonte.
+    </p>
+    <p>
+      Essas são apenas algumas das muitas funcionalidades e recursos oferecidos pelo Visual Studio. Tendo suporte
+      constante da Microsoft e sendo extremamente robusto, isso torna ele mais confiável e atrativo a outros
+      desenvolvedores, sendo uma das ferramentas mais ultilizadas no mercado de trabalho até.
+    </p>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0">Atividade de PW1</p>
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="/index.html" class="nav-link px-2">Home</a></li>
+      </ul>
+    </footer>
+  </div>
+</body>
+
+</html>

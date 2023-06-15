@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/page.style.unique.css">
+  <script src="/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/dinamics.js"></script>
+  <title>Calculador de IMC</title>
+</head>
+
+<body class="dinamic2-bg">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="http://etecpw1.somee.com/">Atividade de PW1</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Definições
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/html/defs/html.html">
+                  Hipertext Markup Language (HTML)
+                </a></li>
+              <li><a class="dropdown-item" href="/html/defs/css.html">
+                  Cascading Style Sheets (CSS)
+                </a></li>
+              <li><a class="dropdown-item" href="/html/defs/js.html">
+                  Java Script (JS)
+                </a></li>
+              <li><a class="dropdown-item" href="/html/defs/api.html">
+                  Application Programming Interface (API)
+                </a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/html/defs/csharp.html">
+                  Linguagem de programação: C#
+                </a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/html/defs/mer.html">
+                  Monitoring, Evaluation and Research (MER)
+                </a></li>
+              <li><a class="dropdown-item" href="/html/defs/der.html">
+                  Distributed Energy Resource (DER)
+                </a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Dinâmicas
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/html/dins/dinamic1.html">Validação de Dados</a></li>
+              <li><a class="dropdown-item" href="/html/dins/dinamic2.html">Calculador de IMC</a></li>
+              <li><a class="dropdown-item" href="/html/dins/dinamic3.html">Cálculo de Juros Compostos</a></li>
+              <li><a class="dropdown-item" href="/html/dins/dinamic4.html">Composição de preços</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/html/dins/dinamic5.html">CSS dark/light</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </nav>
+  <div class="d-flex justify-content-center" style="margin-top: 10%;">
+    <div class="row" style="--bs-gutter-x: 0rem;">
+      <div class="col">
+        <div class="card"
+          style="border-top-right-radius: 0%;border-bottom-right-radius: 0%; border: 3px solid rgb(171,26,26); border-right: 1.5px solid rgb(171,26,26);">
+          <div class="card-body">
+            <h5 class="card-title" style="white-space: nowrap;">>Insira os dados</h5>
+            <p class="card-text" style="font-size: large; margin-top: 5%;" style="white-space: nowrap;">Insira a sua
+              altura</p>
+            <input type="text" id="altura" class="form-control" style="border: 1px solid rgb(171,26,26)"
+              placeholder="Metros">
+            <p class="card-text" style="font-size: large; margin-top: 7%;" style="white-space: nowrap;">Insira o seu
+              peso</p>
+            <input type="text" id="peso" class="form-control" style="border: 1px solid rgb(171,26,26)"
+              placeholder="Quilogramas">
+            <div class="text-center">
+              <button type="button" class="btn btn-outline-primary" onclick="dinamic2()"
+                style="color: black; border: 2px solid rgb(171,26,26); --bs-btn-hover-bg: rgb(171,26,26); --bs-btn-active-bg: rgb(141, 20, 20); margin-top: 3%; ">Calcular</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card"
+          style="border-top-left-radius: 0%;border-bottom-left-radius: 0%; border: 3px solid rgb(171,26,26); border-left: 1.5px solid rgb(171,26,26);">
+          <div class="card-body">
+            <h5 class="card-title">>Seu IMC está:</h5>
+            <p class="card-text" style="white-space: nowrap;" id="1">MENOR que 18,5 (MARGREZA)</p>
+            <p class="card-text" style="white-space: nowrap;" id="2">Entre 18,5 e 24,99 (NORMAL)</p>
+            <p class="card-text" style="white-space: nowrap;" id="3">Entre 25 e 29,99 (SOBREPESO)</p>
+            <p class="card-text" style="white-space: nowrap;" id="4">Entre 30 e 34,99 (OBSIDADE 1)</p>
+            <p class="card-text" style="white-space: nowrap;" id="5">Entre 35 e 39,99 (OBSIDADE 2)</p>
+            <p class="card-text" style="white-space: nowrap;" id="6">ACIMA 39,99 (OBSIDADE 3)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class=" d-flex justify-content-center" style="margin-top: 2%;">
+    <div class="card" style="border: 3px solid rgb(171,26,26); width: 20rem;">
+      <div class="card-body">
+        <h1 class="card-text">Seu IMC é: <a id="imc" style="white-space: nowrap;"></h1>
+      </div>
+    </div>
+  </div>
+  <div style="margin:10.199999999999999999999999%"></div>
+</body>
+
+</html>
